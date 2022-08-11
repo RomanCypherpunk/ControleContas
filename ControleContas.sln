@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-Controle_Contas_DB", "3-Controle_Contas_DB\3-Controle_Contas_DB.csproj", "{AB77D988-8B2C-427B-A667-522CB07DE3DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-Controle_Contas_Model", "2-Controle_Contas_Model\2-Controle_Contas_Model.csproj", "{3829F7B9-603F-4B95-8E6E-9192FC2F804F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "1-Controle_Contas_Web", "1-Controle_Contas_Web\", "{CC8DEE0C-9069-487F-B78F-4FE21649DF7D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{ab77d988-8b2c-427b-a667-522cb07de3da}|3-Controle_Contas_DB.dll;{3829F7B9-603F-4B95-8E6E-9192FC2F804F}|2-Controle_Contas_Model.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52907"
+		Debug.AspNetCompiler.PhysicalPath = "1-Controle_Contas_Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52907\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52907"
+		Release.AspNetCompiler.PhysicalPath = "1-Controle_Contas_Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52907\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52907"
+		SlnRelativePath = "1-Controle_Contas_Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB77D988-8B2C-427B-A667-522CB07DE3DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB77D988-8B2C-427B-A667-522CB07DE3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB77D988-8B2C-427B-A667-522CB07DE3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB77D988-8B2C-427B-A667-522CB07DE3DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3829F7B9-603F-4B95-8E6E-9192FC2F804F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3829F7B9-603F-4B95-8E6E-9192FC2F804F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3829F7B9-603F-4B95-8E6E-9192FC2F804F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3829F7B9-603F-4B95-8E6E-9192FC2F804F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8DEE0C-9069-487F-B78F-4FE21649DF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8DEE0C-9069-487F-B78F-4FE21649DF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8DEE0C-9069-487F-B78F-4FE21649DF7D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8DEE0C-9069-487F-B78F-4FE21649DF7D}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA5C0507-A60F-478F-A28C-0A8E1913DADE}
+	EndGlobalSection
+EndGlobal
