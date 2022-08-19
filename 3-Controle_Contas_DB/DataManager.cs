@@ -11,7 +11,7 @@ namespace Controle_Contas_DB
 {
     public class DataManager
     {
-        private string ConectionString = @"Data Source=192.168.20.138;Initial Catalog=FifaManager;User ID=criptomanager;Password=www.Cripto54321;TrustServerCertificate=True";
+        private string ConectionString = @"Data Source=192.168.20.138;Initial Catalog=FifaManager;User ID=criptomanager;Password=123456;TrustServerCertificate=True";
 
         private SqlConnection conn = null;
         private SqlDataAdapter adapter = null;

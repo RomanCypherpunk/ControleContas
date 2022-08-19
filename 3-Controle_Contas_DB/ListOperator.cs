@@ -20,6 +20,24 @@ namespace Controle_Contas_DB
 
         }
 
+        public List<Conta> ComboBox()
+        {
+            string sql = "seselect g.Descricao as Valor from tbl_lcto as l join tbl_Contas c on l.IDConta = c.IDonta join tbl_GrupoContas g on c.IDGrupoContas = g.IDGrupoContas group by g.Descricao lect g.Descricao, MONTH(l.DataLCTO) as Mês, YEAR(l.DataLCTO) as Ano , sum(l.Valor) as Valor from tbl_lcto as l join tbl_Contas c on l.IDConta = c.IDonta join tbl_GrupoContas g on c.IDGrupoContas = g.IDGrupoContas group by g.Descricao, MONTH(l.DataLCTO), YEAR(l.DataLCTO) order by Valor desc";
+
+            List<Conta> contas = new List<Conta>();
+
+            DataTable dt = db.executeTable(sql);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                contas.Add(new Conta
+                {
+                    DescricaoGrupoContas = row[0].ToString()
+                });
+            }
+            return contas;
+        }
+
         public List<Conta> GetAllLcto()
         {
             string sql = "select g.Descricao, MONTH(l.DataLCTO) as Mês, YEAR(l.DataLCTO) as Ano , sum(l.Valor) as Valor from tbl_lcto as l join tbl_Contas c on l.IDConta = c.IDonta join tbl_GrupoContas g on c.IDGrupoContas = g.IDGrupoContas group by g.Descricao, MONTH(l.DataLCTO), YEAR(l.DataLCTO) order by Valor desc";

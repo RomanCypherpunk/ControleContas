@@ -9,25 +9,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:GridView ID="gridListaContas" runat="server" AllowSorting="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="gridListaContas_SelectedIndexChanged">
-                <AlternatingRowStyle BackColor="#CCCCCC" />
-                <FooterStyle BackColor="#CCCCCC" />
-                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-                <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                <SortedAscendingHeaderStyle BackColor="#808080" />
-                <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                <SortedDescendingHeaderStyle BackColor="#383838" />
-            </asp:GridView>
-            <asp:Button runat="server" Text="Button"></asp:Button>
-            <asp:Panel ID="Panel1" runat="server">
-            </asp:Panel>
-        </div>
-        <div>
-            <asp:Button ID="Button1" runat="server" Text="Button" />
-            <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton></div>
+       <div>
+           <asp:GridView ID="gridListaContas" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+              
+               <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+               <EditRowStyle BackColor="#999999" />
+               <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+               <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+               <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+               <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+               <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+               <SortedAscendingCellStyle BackColor="#E9E7E2" />
+               <SortedAscendingHeaderStyle BackColor="#506C8C" />
+               <SortedDescendingCellStyle BackColor="#FFFDF8" />
+               <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+           </asp:GridView>
+       </div>
     </form>
 </body>
 </html>
